@@ -4,6 +4,13 @@
 "name": "Teacher Tab",
 "description": "This extension allows the user to open a new tab with teacher tools",
 "version": "1.0",
+"chrome_url_overrides" : {
+    "newtab": "index.html"
+  },
+
+"permissions": [
+    "tabs"
+],
 
 "browser_action": {
         "default_icon": "Assets/images/icon.png",
