@@ -1,6 +1,6 @@
 
-const motivDiv = document.querySelector("#motivation").style;
-const img =   'https://source.unsplash.com/user/abe2211/likes/1600x900';
+const body = document.querySelector("body").style;
+const img = 'https://source.unsplash.com/user/abe2211/likes/1600x900';
 
-motivDiv.background = `url('${img}') no-repeat fixed center`;
-motivDiv.backgroundSize = 'cover'; 
+body.background = `url('${img}') no-repeat fixed center`;
+body.backgroundSize = 'cover'; 
