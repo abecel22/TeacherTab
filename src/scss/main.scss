@@ -11,6 +11,27 @@ html, body {
     position: relative;
 }
 
+//timer
+.timerDiv {
+    height: 90%;
+    text-align: center;
+    display: none;
+    width: 100%;
+    .timer {
+        display: table-cell;
+        vertical-align: middle;
+        .timerVal {
+            color: white;
+            font-size: 8em;
+            background-color: black;
+            display: block;
+            width: 50%;
+            height: 30%;
+            margin: 0 auto;
+        }
+    }
+}
+
 //sidenav
 .sideNav {
     height: 100%;
@@ -30,6 +51,8 @@ html, body {
         color: black;
         display: block;
         transition: 0.3s;
+        cursor: pointer;
+        width: 100%;
     }
 }
 
@@ -50,4 +73,5 @@ html, body {
     top: 2%;
     right: 50%;
     transition: 0.3s;
+    cursor: pointer;
 }
