@@ -23,11 +23,11 @@ html, body {
         .timerVal {
             color: white;
             font-size: 8em;
-            background-color: black;
             display: block;
-            width: 50%;
+            width: 40%;
             height: 30%;
             margin: 0 auto;
+            transition: 2s;
         }
     }
 }
@@ -74,4 +74,10 @@ html, body {
     right: 50%;
     transition: 0.3s;
     cursor: pointer;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    transition: 2s;
 }
