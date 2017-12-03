@@ -81,3 +81,18 @@ html, body {
     height: 100%;
     transition: 2s;
 }
+
+//timerButtons
+.timerButtons {
+    color: white;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    width: 30%; 
+    .timerControls {
+        flex: 1;
+        border: 1px solid white;
+        border-radius: 10px;
+        margin: 2%;
+    }
+}
