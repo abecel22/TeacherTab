@@ -88,11 +88,11 @@ html, body {
     margin: 0 auto;
     display: flex;
     flex-direction: row;
-    width: 30%; 
+    width: 20%; 
     .timerControls {
         flex: 1;
         border: 1px solid white;
         border-radius: 10px;
-        margin: 2%;
+        margin: 4%;
     }
 }
