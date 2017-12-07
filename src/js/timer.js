@@ -1,20 +1,29 @@
 let countdown;
-let totalSeconds;
+let minutes;
+let secondsRemaining = 180;
 let timerValue = document.querySelector('.timerVal');
 const startButton = document.querySelector('#startButton');
 
 
+
 function runTimer() {
-    totalSeconds = 60;
+    
     countdown = setInterval(() => {
-        totalSeconds--;
+        secondsRemaining--;
         displayTimeLeft();
     }, 1000);
 }
 
 function displayTimeLeft() {
+    let min = Math.floor(secondsRemaining / 60);
+    let sec = secondsRemaining % 60;
+    if(sec < 10) {
+        timerValue.textContent = `${min} : 0${sec}`;
+    } else {
+        timerValue.textContent = `${min} : ${sec}`;
+    }
     
-    timerValue.textContent = `00:${totalSeconds}`;
 }
+
 
 startButton.addEventListener('click', runTimer);
