@@ -17,6 +17,9 @@
      <div class="timerDiv">
      <div class="timer">
      <span class="timerVal"></span>
+     <form name="customForm" id="customSetTime" class="customForm" >
+         <input type="number" name="minutes" id="enterTime" placeholder="Enter Minutes">
+     </form>
      <div class="timerButtons">
         <div id="startButton" class="timerControls">Start</div>
         <div id="resetButton" class="timerControls">Reset</div>
@@ -29,11 +32,6 @@
      <div class="sideNav">
         <span id="closeNav"><i class="fa fa-times fa-2x" aria-hidden="false"></i></span>
         <a href="#" id="timerButton">Timer</a>
-        <button dataTime="300" class="timerSetButton">5 min</button>
-        <button dataTime="900" class="timerSetButton">15 min</button>
-        <form name="customForm" id="customSetTime">
-            <input type="number" name="minutes" id="enterTime" placeholder="Enter Minutes">
-        </form>
         <a href="#" id="graderButton">Grader</a>
      </div>
      

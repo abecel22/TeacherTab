@@ -11,7 +11,7 @@ var secondsRemaining = void 0;
 var timerValue = document.querySelector('.timerVal');
 var startButton = document.querySelector('#startButton');
 var resetButton = document.querySelector('#resetButton');
-var enterTime = document.customForm;
+var enterTime = document.querySelector('.customForm');
 
 //view timer from click in sidebar
 function viewTimer() {
@@ -47,7 +47,7 @@ function getTime(e) {
     minutes = this.minutes.value;
     secondsRemaining = minutes * 60;
     runTimer(secondsRemaining);
-    viewTimer();
+    enterTime.style.display = 'none';
     this.reset();
 }
 
