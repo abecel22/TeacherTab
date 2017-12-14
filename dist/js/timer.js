@@ -47,12 +47,15 @@ function getTime(e) {
     minutes = this.minutes.value;
     secondsRemaining = minutes * 60;
     runTimer(secondsRemaining);
-    enterTime.style.display = 'none';
+    enterTime.classList.remove('customForm');
+    enterTime.classList.add('hideCustomForm');
     this.reset();
 }
 
 function resetTimer() {
     clearInterval(countdown);
+    enterTime.classList.remove('hideCustomForm');
+    enterTime.classList.add('customForm');
 }
 
 //timer button in sidebar specific

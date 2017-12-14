@@ -6,7 +6,7 @@ const conatiner = document.querySelector('.container');
 let minutes;
 let countdown;
 let secondsRemaining;
-let timerValue = document.querySelector('.timerVal');
+const timerValue = document.querySelector('.timerVal');
 const startButton = document.querySelector('#startButton');
 const resetButton = document.querySelector('#resetButton');
 const enterTime = document.querySelector('.customForm');
@@ -45,12 +45,15 @@ function getTime(e) {
     minutes = this.minutes.value;
     secondsRemaining = minutes * 60;
     runTimer(secondsRemaining);
-    enterTime.style.display = 'none';
+    enterTime.classList.remove('customForm');
+    enterTime.classList.add('hideCustomForm');
     this.reset();
 }
 
 function resetTimer() {
     clearInterval(countdown);
+    enterTime.classList.remove('hideCustomForm');
+    enterTime.classList.add('customForm');
 }
 
 //timer button in sidebar specific

@@ -22,7 +22,15 @@ html, body {
         vertical-align: middle;
         //timer form 
         .customForm {
-            transition: 10s;
+            visibility: visible;
+            opacity: 1;
+            transition: 1s;
+        }
+        .hideCustomForm {
+            visibility: hidden;
+            height: 0;
+            opacity: 0;
+            transition: 1s;
         }
         #enterTime{
             width: 40%;
