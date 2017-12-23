@@ -1,10 +1,10 @@
 'use strict';
 
-// timer button in sidebar specific
+//  Timer button in sidebar specific
 var timerButton = document.querySelector('#timerButton');
 var timerDiv = document.querySelector('.timerDiv');
 var conatiner = document.querySelector('.container');
-//timer controls
+// Timer controls
 var minutes = void 0;
 var countdown = void 0;
 var secondsRemaining = void 0;
@@ -13,7 +13,7 @@ var startButton = document.querySelector('#startButton');
 var resetButton = document.querySelector('#resetButton');
 var enterTime = document.querySelector('.customForm');
 
-//view timer from click in sidebar
+// View timer from click in sidebar
 function viewTimer() {
     if (timerDiv.style.display === 'table') {
         timerDiv.style.display = 'none';
@@ -24,6 +24,8 @@ function viewTimer() {
     }
 }
 
+// Start timer from set interval using seconds remaining
+
 function runTimer(secondsRemaining) {
     clearInterval(countdown);
     countdown = setInterval(function () {
@@ -32,6 +34,7 @@ function runTimer(secondsRemaining) {
     }, 1000);
 }
 
+// Makes calculations of seconds and minutes and displays in DOM
 function displayTimeLeft(secondsRemaining) {
     var min = Math.floor(secondsRemaining / 60);
     var sec = secondsRemaining % 60;
@@ -42,6 +45,7 @@ function displayTimeLeft(secondsRemaining) {
     }
 }
 
+// Gets minutes from custom form and sends secondsRemaining to runTimer function 
 function getTime(e) {
     e.preventDefault();
     minutes = this.minutes.value;
@@ -52,6 +56,7 @@ function getTime(e) {
     this.reset();
 }
 
+// Clears interval and resets form 
 function resetTimer() {
     clearInterval(countdown);
     enterTime.classList.remove('hideCustomForm');
