@@ -1,7 +1,7 @@
 //  Timer button in sidebar specific
 const timerButton = document.querySelector('#timerButton');
 const timerDiv = document.querySelector('.timerDiv');
-const conatiner = document.querySelector('.container');
+const container = document.querySelector('.container');
 // Timer controls
 let minutes;
 let countdown;
@@ -15,10 +15,10 @@ const enterTime = document.querySelector('.customForm');
 function viewTimer() {
     if(timerDiv.style.display === 'table') {
         timerDiv.style.display = 'none';
-        conatiner.style.background = 'initial';
+        container.style.background = 'initial';
     } else {
         timerDiv.style.display = 'table';
-        conatiner.style.background = 'rgba(43, 49, 38, 0.45)';
+        container.style.background = 'rgba(43, 49, 38, 0.2)';
     } 
 }
 

@@ -24,13 +24,13 @@ html, body {
         .customForm {
             visibility: visible;
             opacity: 1;
-            transition: 1s;
+            transition: .5s;
         }
         .hideCustomForm {
             visibility: hidden;
             height: 0;
             opacity: 0;
-            transition: 1s;
+            transition: .5s;
         }
         #enterTime{
             width: 40%;
@@ -42,6 +42,9 @@ html, body {
             color: white;
             background: transparent;
             border: 2px solid white;
+            &:focus {
+                border: 3px solid white;
+                outline: 0;            }
         }
         .timerVal {
             color: white;
@@ -50,7 +53,7 @@ html, body {
             width: 40%;
             height: 30%;
             margin: 0 auto;
-            transition: 2s;
+            transition: .5s;
         }
     }
 }
