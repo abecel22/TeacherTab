@@ -18,7 +18,7 @@ function viewTimer() {
         container.style.background = 'initial';
     } else {
         timerDiv.style.display = 'table';
-        container.style.background = 'rgba(43, 49, 38, 0.2)';
+        container.style.background = 'rgba(43, 49, 38, 0.6)';
     } 
 }
 
@@ -57,6 +57,7 @@ function getTime(e) {
 // Clears interval and resets form 
 function resetTimer() {
     clearInterval(countdown);
+    timerValue.textContent = '';
     enterTime.classList.remove('hideCustomForm');
     enterTime.classList.add('customForm');
 }

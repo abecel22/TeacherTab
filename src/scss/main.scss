@@ -11,6 +11,12 @@ html, body {
     position: relative;
 }
 
+// this conainer is used to add a trasnparent overlay to body for timer
+.container {
+    position: absolute;
+    top: 0px;
+}
+
 //timer
 .timerDiv {
     height: 90%;
@@ -37,7 +43,7 @@ html, body {
             height: 30%;
             display: block;
             margin: 0 auto;
-            font-size: 4em;
+            font-size: 3em;
             text-align: center;
             color: white;
             background: transparent;

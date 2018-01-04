@@ -9,7 +9,10 @@
   },
 
 "permissions": [
-    "tabs"
+    "tabs",
+    "http://*/*",
+    "https://*/*",
+    "*://*.google.com/"
 ],
 
 "background":{
