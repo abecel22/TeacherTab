@@ -28,7 +28,12 @@ function runTimer(secondsRemaining) {
     clearInterval(countdown);
     countdown = setInterval(() => {
         secondsRemaining--;
-        displayTimeLeft(secondsRemaining);
+        if(secondsRemaining > -1) {
+            displayTimeLeft(secondsRemaining);
+        } else {
+            clearInterval();
+        }
+       
     }, 1000);
 }
 
@@ -40,7 +45,8 @@ function displayTimeLeft(secondsRemaining) {
         timerValue.textContent = `${min}:0${sec}`;
     } else {
         timerValue.textContent = `${min}:${sec}`;
-    }  
+    } 
+     
 }
 
 // Gets minutes from custom form and sends secondsRemaining to runTimer function 

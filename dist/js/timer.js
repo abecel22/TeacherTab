@@ -30,7 +30,11 @@ function runTimer(secondsRemaining) {
     clearInterval(countdown);
     countdown = setInterval(function () {
         secondsRemaining--;
-        displayTimeLeft(secondsRemaining);
+        if (secondsRemaining > -1) {
+            displayTimeLeft(secondsRemaining);
+        } else {
+            clearInterval();
+        }
     }, 1000);
 }
 
