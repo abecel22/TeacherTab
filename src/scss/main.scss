@@ -56,11 +56,40 @@ html, body {
             color: white;
             font-size: 8em;
             display: block;
+            padding-bottom: 0;
             width: 40%;
             height: 30%;
             margin: 0 auto;
             transition: .5s;
         }
+    }
+}
+
+.graderDiv {
+    height: 100%;
+    margin: 0 auto;
+    text-align: center; 
+    .gradeInputDiv {
+        background-color: white;
+        height: 25%;
+        width: 40%;
+        margin: 0 auto;
+    }
+    .questionForm {
+        margin-top: 10%;
+        margin-bottom: 5%;
+        width: 80%;
+        height: 30px;
+        font-size: 1.5em;
+    }
+    .calculateButton {
+        border: 2px solid #FF4081;
+        width: 80%;
+        height: 30px;
+        margin: 0 auto;
+        background-color: #FF4081;
+        color: #fff;
+        font-size: 1.2em;
     }
 }
 
