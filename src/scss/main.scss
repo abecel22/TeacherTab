@@ -68,7 +68,8 @@ html, body {
 .graderDiv {
     height: 100%;
     margin: 0 auto;
-    text-align: center; 
+    text-align: center;
+    display: none;
     .gradeInputDiv {
         background-color: white;
         height: 25%;
@@ -90,6 +91,22 @@ html, body {
         background-color: #FF4081;
         color: #fff;
         font-size: 1.2em;
+    }
+    .resultsDiv {
+        background-color: white;
+        width: 40%;
+        height: auto;        
+        margin: 0 auto;
+    }
+    .gradeTable {
+        margin: 0 auto;
+        border-collapse: collapse;
+        width: 100%;
+        th {
+            color: white;
+            background-color: #212121
+            ;
+        }
     }
 }
 
