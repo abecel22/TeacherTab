@@ -72,31 +72,42 @@ html, body {
     display: none;
     .gradeInputDiv {
         background-color: white;
-        height: 25%;
         width: 40%;
+        height: auto;
+        max-width: 350px;
         margin: 0 auto;
+    }
+    .questionFormDiv {
+        padding-bottom: 20px;
     }
     .questionForm {
         margin-top: 10%;
         margin-bottom: 5%;
-        width: 80%;
+        width: 50%;
+        max-width: 200px;
         height: 30px;
-        font-size: 1.5em;
+        font-size: 1.2em;
+        border-radius: 5px;
+        padding: 3px;
     }
     .calculateButton {
         border: 2px solid #FF4081;
-        width: 80%;
+        width: 50%;
+        max-width: 200px;        
         height: 30px;
         margin: 0 auto;
+        padding: 2px;
         background-color: #FF4081;
         color: #fff;
         font-size: 1.2em;
+        border-radius: 5px;        
     }
     .resultsDiv {
         background-color: white;
         width: 40%;
         height: auto;        
         margin: 0 auto;
+        max-width: 350px;        
     }
     .gradeTable {
         margin: 0 auto;
@@ -104,9 +115,20 @@ html, body {
         width: 100%;
         th {
             color: white;
-            background-color: #212121
-            ;
+            background-color: #212121;
+            padding: 2px;
         }
+        tr {
+            background-color: #BDBDBD;
+            padding: 2px;            
+            &:nth-child(odd) {
+                background-color: #E0E0E0;
+            }
+            &:hover {
+                background-color: #9E9E9E;
+            }
+        }
+        
     }
 }
 
