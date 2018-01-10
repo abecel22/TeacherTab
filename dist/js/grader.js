@@ -6,6 +6,8 @@ var enterQuestions = document.querySelector('.questionFormSecond');
 var calculateButton = document.querySelector('.calculateButton');
 
 var totalQuestions = 0;
+var points = 0;
+var grade = 0;
 
 function viewGrader() {
     if (graderDiv.style.display === 'block') {
@@ -15,15 +17,23 @@ function viewGrader() {
     }
 }
 
+function calculateGrade(totalQuestions) {
+    points = 100 / totalQuestions;
+    for (var i = totalQuestions; i < 1; i--) {
+        grade = 100 - i * points;
+        return grade;
+    }
+}
+
 function getQuestions(e) {
     e.preventDefault();
     totalQuestions = this.questions.value;
-    console.log(totalQuestions);
+    calculateGrade(totalQuestions);
 }
 
 function getQuestionsButton() {
     totalQuestions = enterQuestions.questions.value;
-    console.log(totalQuestions);
+    calculateGrade();
 }
 
 graderButton.addEventListener('click', viewGrader);
