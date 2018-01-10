@@ -19,7 +19,7 @@ function viewGrader() {
 
 function calculateGrade(totalQuestions) {
     points = 100 / totalQuestions;
-    for (var i = totalQuestions; i < 1; i--) {
+    for (var i = totalQuestions; i = 0; i--) {
         grade = 100 - i * points;
         return grade;
     }
