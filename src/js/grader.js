@@ -23,6 +23,10 @@ function calculateGrade(totalQuestions) {
     }
 }
 
+// function displayTable() {
+    
+// }
+
 
 function getQuestions(e) {
     e.preventDefault();
