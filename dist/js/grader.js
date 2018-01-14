@@ -4,10 +4,12 @@ var graderButton = document.querySelector('#graderButton');
 var graderDiv = document.querySelector('.graderDiv');
 var enterQuestions = document.querySelector('.questionFormSecond');
 var calculateButton = document.querySelector('.calculateButton');
+var table = document.querySelector('.gradeTable');
 
 var totalQuestions = 0;
 var points = 0;
 var grade = 0;
+var template = '';
 
 function viewGrader() {
     if (graderDiv.style.display === 'block') {
@@ -23,6 +25,24 @@ function calculateGrade(totalQuestions) {
         grade = 100 - i * points;
         console.log(grade);
     }
+    generateTable();
+}
+
+function generateTable() {
+    template = '<tr>\n   <th># Wrong</th>\n   <th>Grade</th>\n   <th># Right</th>\n </tr>';
+    var newRow = table.insertRow(0);
+    newRow.appendChild(template);
+
+    //   <tr>
+    //     <td></td>
+    //     <td></td>
+    //     <td></td>
+    //   </tr>
+    //   <tr>
+    //     <td></td>
+    //     <td></td>
+    //     <td></td>
+    //   </tr>
 }
 
 function getQuestions(e) {
