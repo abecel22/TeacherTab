@@ -30,8 +30,6 @@ function calculateGrade(totalQuestions) {
 
 function generateTable() {
     template = '<tr>\n   <th># Wrong</th>\n   <th>Grade</th>\n   <th># Right</th>\n </tr>';
-    var newRow = table.insertRow(0);
-    newRow.appendChild(template);
 
     //   <tr>
     //     <td></td>

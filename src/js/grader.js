@@ -32,8 +32,6 @@ function generateTable() {
    <th>Grade</th>
    <th># Right</th>
  </tr>` 
- var newRow = table.insertRow(0);
- newRow.appendChild(template);
 
 //   <tr>
 //     <td></td>
