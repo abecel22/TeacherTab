@@ -2,7 +2,8 @@ const graderButton = document.querySelector('#graderButton');
 const graderDiv = document.querySelector('.graderDiv');
 const enterQuestions = document.querySelector('.questionFormSecond');
 const calculateButton = document.querySelector('.calculateButton');
-const table = document.querySelector('.gradeTable');
+//const table = document.querySelector('.gradeTable');
+const tableDiv = document.querySelector('.resultsDiv');
 
 let totalQuestions = 0;
 let points = 0;
@@ -27,17 +28,27 @@ function calculateGrade(totalQuestions) {
 }
 
 function generateTable() {
-   template =  `<tr>
-   <th># Wrong</th>
-   <th>Grade</th>
-   <th># Right</th>
- </tr>` 
+   template =  ` 
+   <table class="gradeTable" >
+    <tr>
+        <th># Wrong</th>
+        <th>Grade</th>
+        <th># Right</th>
+    </tr>      
+   `
+   for(let i = 0; i <= totalQuestions + 1 ; i++) {
+       template += `  <tr>
+       <td>1</td>
+       <td>2</td>
+       <td>3</td>
+     </tr>`
+   }
+   template += `</table>`
+   tableDiv.innerHTML = template;
 
-//   <tr>
-//     <td></td>
-//     <td></td>
-//     <td></td>
-//   </tr>
+
+
+
 //   <tr>
 //     <td></td>
 //     <td></td>
