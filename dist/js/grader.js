@@ -30,18 +30,14 @@ function calculateGrade(totalQuestions) {
 }
 
 function generateTable() {
+    var numberRight = totalQuestions;
     template = ' \n   <table class="gradeTable" >\n    <tr>\n        <th># Wrong</th>\n        <th>Grade</th>\n        <th># Right</th>\n    </tr>      \n   ';
-    for (var i = 0; i <= totalQuestions + 1; i++) {
-        template += '  <tr>\n       <td>1</td>\n       <td>2</td>\n       <td>3</td>\n     </tr>';
+    for (var i = 0; i <= totalQuestions; i++) {
+        template += '  <tr>\n       <td>' + i + '</td>\n       <td>' + (Math.round(100 - i * points) + '%') + '</td>\n       <td>' + numberRight + '</td>\n     </tr>';
+        numberRight--;
     }
     template += '</table>';
     tableDiv.innerHTML = template;
-
-    //   <tr>
-    //     <td></td>
-    //     <td></td>
-    //     <td></td>
-    //   </tr>
 }
 
 function getQuestions(e) {

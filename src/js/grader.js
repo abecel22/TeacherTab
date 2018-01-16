@@ -28,6 +28,7 @@ function calculateGrade(totalQuestions) {
 }
 
 function generateTable() {
+    let numberRight = totalQuestions;
    template =  ` 
    <table class="gradeTable" >
     <tr>
@@ -36,24 +37,16 @@ function generateTable() {
         <th># Right</th>
     </tr>      
    `
-   for(let i = 0; i <= totalQuestions + 1 ; i++) {
+   for(let i = 0; i <= totalQuestions ; i++) {
        template += `  <tr>
-       <td>1</td>
-       <td>2</td>
-       <td>3</td>
+       <td>${i}</td>
+       <td>${Math.round(100 - (i * points)) + '%'}</td>
+       <td>${numberRight}</td>
      </tr>`
+     numberRight--;
    }
    template += `</table>`
    tableDiv.innerHTML = template;
-
-
-
-
-//   <tr>
-//     <td></td>
-//     <td></td>
-//     <td></td>
-//   </tr>
 }
 
 
