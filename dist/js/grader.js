@@ -16,6 +16,8 @@ function viewGrader() {
     if (graderDiv.style.display === 'block') {
         graderDiv.style.display = 'none';
         body.style.overflow = 'hidden';
+        tableDiv.innerHTML = '';
+        enterQuestions.reset();
     } else {
         graderDiv.style.display = 'block';
         body.style.overflow = 'auto';
