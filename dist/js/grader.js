@@ -6,6 +6,7 @@ var enterQuestions = document.querySelector('.questionFormSecond');
 var calculateButton = document.querySelector('.calculateButton');
 var tableDiv = document.querySelector('.resultsDiv');
 var body = document.querySelector('body');
+var closeGraderButton = document.querySelector('#closeGrader');
 
 var totalQuestions = 0;
 var points = 0;
@@ -48,5 +49,8 @@ function getQuestionsButton() {
 }
 
 graderButton.addEventListener('click', viewGrader);
+closeGraderButton.addEventListener('click', viewGrader);
+//function used from sidebar.js
+graderButton.addEventListener('click', closeNav);
 enterQuestions.addEventListener('submit', getQuestions);
 calculateButton.addEventListener('click', getQuestionsButton);

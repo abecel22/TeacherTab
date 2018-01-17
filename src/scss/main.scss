@@ -77,6 +77,14 @@ html, body {
         height: auto;
         max-width: 350px;
         margin: 0 auto;
+        #closeGrader {
+            z-index: 1;
+            position: absolute;
+            top: 2%;
+            right: 50%;
+            color: white;
+            cursor: pointer;
+        }
     }
     .questionFormDiv {
         padding-bottom: 20px;
