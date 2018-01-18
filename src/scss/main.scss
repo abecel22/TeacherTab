@@ -45,15 +45,15 @@ html, body {
             margin: 0 auto;
             font-size: 3em;
             text-align: center;
-            color: white;
+            color: #ECEFF1;
             background: transparent;
-            border: 2px solid white;
+            border: 2px solid #ECEFF1;
             &:focus {
-                border: 3px solid white;
+                border: 3px solid #ECEFF1;
                 outline: 0;            }
         }
         .timerVal {
-            color: white;
+            color: #ECEFF1;
             font-size: 8em;
             display: block;
             padding-bottom: 0;
@@ -72,19 +72,11 @@ html, body {
     display: none;
     overflow-y: auto;
     .gradeInputDiv {
-        background-color: white;
+        background-color: #ECEFF1;
         width: 40%;
         height: auto;
         max-width: 350px;
         margin: 0 auto;
-        #closeGrader {
-            z-index: 1;
-            position: absolute;
-            top: 2%;
-            right: 50%;
-            color: white;
-            cursor: pointer;
-        }
     }
     .questionFormDiv {
         padding-bottom: 20px;
@@ -98,6 +90,7 @@ html, body {
         font-size: 1.2em;
         border-radius: 5px;
         padding: 3px;
+        background-color: #CFD8DC;
     }
     .calculateButton {
         border: 2px solid #FF4081;
@@ -112,7 +105,7 @@ html, body {
         border-radius: 5px;        
     }
     .resultsDiv {
-        background-color: white;
+        background-color: #ECEFF1;
         width: 40%;
         height: auto;        
         margin: 0 auto;
@@ -123,7 +116,7 @@ html, body {
         border-collapse: collapse;
         width: 100%;
         th {
-            color: white;
+            color: #ECEFF1;
             background-color: #212121;
             padding: 2px;
         }
@@ -139,6 +132,13 @@ html, body {
         }
         
     }
+    #closeGrader {
+        cursor: pointer;
+        position: relative;
+        top: 4px;
+        right: -45%;
+        color: #CFD8DC;
+    }
 }
 
 //sidenav
@@ -153,21 +153,25 @@ html, body {
     overflow-x: hidden;
     transition: all 500ms cubic-bezier(0.175, 0.885, 0.32, 1.5); 
     padding-top: 60px;
+    background-color: #ECEFF1;
     a {
-        padding: 15px 8px 8px 32px;
+        padding: 15px 15px 8px 15px;
         text-decoration: none;
         font-size: 25px;
         color: black;
+        font-weight: 900;
         display: block;
         transition: 0.3s;
         cursor: pointer;
-        width: 100%;
+        width: 80%;
+        margin-left: 7%; 
+        border-bottom: 2px solid #CFD8DC;
     }
 }
 
 //font awesome
 .fa-bars {
-    color: white;
+    color: #ECEFF1;
     position: absolute;
     right: 2%;
     top: 2%;
@@ -180,7 +184,7 @@ html, body {
 #closeNav {
     position: absolute;
     top: 2%;
-    right: 50%;
+    right: 77%;
     transition: 0.3s;
     cursor: pointer;
 }
@@ -193,14 +197,14 @@ html, body {
 
 //timerButtons
 .timerButtons {
-    color: white;
+    color: #ECEFF1;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
     width: 20%; 
     .timerControls {
         flex: 1;
-        border: 1px solid white;
+        border: 1px solid #ECEFF1;
         border-radius: 10px;
         margin: 4%;
     }
