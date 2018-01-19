@@ -50,7 +50,8 @@ html, body {
             border: 2px solid #ECEFF1;
             &:focus {
                 border: 3px solid #ECEFF1;
-                outline: 0;            }
+                outline: 0;            
+            }
         }
         .timerVal {
             color: #ECEFF1;
@@ -91,6 +92,9 @@ html, body {
         border-radius: 5px;
         padding: 3px;
         background-color: #CFD8DC;
+        &:focus {
+            outline: 0;  
+        }
     }
     .calculateButton {
         border: 2px solid #FF4081;
