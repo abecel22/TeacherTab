@@ -12,41 +12,39 @@ let grade = 0;
 let template = '';
 
 function viewGrader() {
-    if(graderDiv.style.display === 'block') {
+    if (graderDiv.style.display === 'block') {
         graderDiv.style.display = 'none';
         body.style.overflow = 'hidden';
         tableDiv.innerHTML = '';
         enterQuestions.reset();
-
     } else {
         graderDiv.style.display = 'block';
-        body.style.overflow = 'auto';        
+        body.style.overflow = 'auto';
     }
 }
 
 function generateTable() {
     points = 100 / totalQuestions;
     let numberRight = totalQuestions;
-   template =  ` 
+    template = ` 
    <table class="gradeTable" >
     <tr>
         <th># Wrong</th>
         <th>Grade</th>
         <th># Right</th>
     </tr>      
-   `
-   for(let i = 0; i <= totalQuestions ; i++) {
-       template += `  <tr>
+   `;
+    for (let i = 0; i <= totalQuestions; i++) {
+        template += `  <tr>
        <td>${i}</td>
-       <td>${Math.round(100 - (i * points)) + '%'}</td>
+       <td>${Math.round(100 - i * points) + '%'}</td>
        <td>${numberRight}</td>
-     </tr>`
-     numberRight--;
-   }
-   template += `</table>`
-   tableDiv.innerHTML = template;
+     </tr>`;
+        numberRight--;
+    }
+    template += `</table>`;
+    tableDiv.innerHTML = template;
 }
-
 
 function getQuestions(e) {
     e.preventDefault();
@@ -58,7 +56,6 @@ function getQuestionsButton() {
     totalQuestions = enterQuestions.questions.value;
     generateTable();
 }
-
 
 graderButton.addEventListener('click', viewGrader);
 closeGraderButton.addEventListener('click', viewGrader);

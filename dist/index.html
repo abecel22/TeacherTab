@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,58 +11,70 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
-<body>
-       
-   
-<div class="container">
-    <a href="https://www.google.com/"> <img src="Assets/Images/Apps Icon.svg" alt="Apps Button" class="appsIcon"></a>
-     <!-- ======    Timer    ======  -->
-     <div class="timerDiv">
-     <div class="timer">
-     <span class="timerVal"></span>
-     <form name="customForm" id="customSetTime" class="customForm" >
-         <input type="number" name="minutes" id="enterTime" placeholder="Enter Minutes" autocomplete="off">
-     </form>
-     <div class="timerButtons">
-        <div id="startButton" class="timerControls">Start</div>
-        <div id="resetButton" class="timerControls">Reset</div>
-    </div>
-     </div>
-     </div>
 
-      <!-- ======    Grader    ======  -->
-     <div class="graderDiv">
-        <div class="gradeInputDiv">
-            <div class="questionFormDiv">
-                <span id="closeGrader"><i class="fa fa-times fa-2x" aria-hidden="false"></i></span>
-                <form name="customFormSecond" id="enterQuestions" class="questionFormSecond" >
-                <input type="number" name="questions" id="enterQuestions" class="questionForm" placeholder="# of Questions" autocomplete="off">
+<body>
+
+
+    <div class="container">
+        <a href="https://www.google.com/">
+            <img src="Assets/Images/Apps Icon.svg" alt="Apps Button" class="appsIcon">
+        </a>
+        <!-- ======    Timer    ======  -->
+        <div class="timerDiv">
+            <div class="timer">
+                <span class="timerVal"></span>
+                <form name="customForm" id="customSetTime" class="customForm">
+                    <input type="number" name="minutes" id="enterTime" placeholder="Enter Minutes" autocomplete="off">
                 </form>
-                <div class="calculateButton" ><span>Calculate Grade</span></div>
+                <div class="timerButtons">
+                    <div id="startButton" class="timerControls">Start</div>
+                    <div id="resetButton" class="timerControls">Reset</div>
+                </div>
             </div>
         </div>
-        <div class="resultsDiv" >
-           
+
+        <!-- ======    Grader    ======  -->
+        <div class="graderDiv">
+            <div class="gradeInputDiv">
+                <div class="questionFormDiv">
+                    <span id="closeGrader">
+                        <i class="fa fa-times fa-2x" aria-hidden="false"></i>
+                    </span>
+                    <form name="customFormSecond" id="enterQuestions" class="questionFormSecond">
+                        <input type="number" name="questions" id="enterQuestions" class="questionForm" placeholder="# of Questions" autocomplete="off">
+                    </form>
+                    <div class="calculateButton">
+                        <span>Calculate Grade</span>
+                    </div>
+                </div>
+            </div>
+            <div class="resultsDiv">
+
+            </div>
         </div>
-     </div>
 
 
-     <!-- ======   Sidebar Menu    ======  -->
-     <span id="clickBars"><i class="fa fa-bars fa-2x" aria-hidden="false"></i></span>
-    
-     <div class="sideNav">
-        <span id="closeNav"><i class="fa fa-times fa-2x" aria-hidden="false"></i></span>
-        <a href="#" id="timerButton">Timer</a>
-        <a href="#" id="graderButton">Grader</a>
-        <a href="#" id="graderButton">Settings</a>
-        <div id= "settings-div"></div>
-     </div>
-     
-</div>
-<script src="js/background.js"></script>
-<script src="js/index.js"></script>
-<script src="js/sidebar.js"></script>
-<script src="js/timer.js"></script>
-<script src="js/grader.js"></script>
+        <!-- ======   Sidebar Menu    ======  -->
+        <span id="clickBars">
+            <i class="fa fa-bars fa-2x" aria-hidden="false"></i>
+        </span>
+
+        <div class="sideNav">
+            <span id="closeNav">
+                <i class="fa fa-times fa-2x" aria-hidden="false"></i>
+            </span>
+            <a href="#" id="timerButton">Timer</a>
+            <a href="#" id="graderButton">Grader</a>
+            <a href="#" id="graderButton">Settings</a>
+            <div id="settings-div"></div>
+        </div>
+
+    </div>
+    <script src="js/background.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/sidebar.js"></script>
+    <script src="js/timer.js"></script>
+    <script src="js/grader.js"></script>
 </body>
+
 </html>

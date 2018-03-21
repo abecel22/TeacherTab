@@ -49,7 +49,7 @@ function displayTimeLeft(secondsRemaining) {
     }
 }
 
-// Gets minutes from custom form and sends secondsRemaining to runTimer function 
+// Gets minutes from custom form and sends secondsRemaining to runTimer function
 function getTime(e) {
     e.preventDefault();
     minutes = this.minutes.value;
@@ -60,7 +60,7 @@ function getTime(e) {
     this.reset();
 }
 
-// Clears interval and resets form 
+// Clears interval and resets form
 function resetTimer() {
     clearInterval(countdown);
     timerValue.textContent = '';
